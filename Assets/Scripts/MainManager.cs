@@ -66,6 +66,10 @@ public class MainManager : MonoBehaviour
                 Reload();
             }
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("menu");
+        }
     }
 
     void AddPoint(int point)
